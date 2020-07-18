@@ -4,5 +4,10 @@
 			"name": ".leetcode",
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"cSpell.words": [
+			"nums"
+		]
+	}
 }
