@@ -2,7 +2,6 @@ package main
 
 import (
 	"container/list"
-	"fmt"
 )
 
 /*
@@ -105,8 +104,3 @@ func buildGraphMatrix(vertex int, edges [][]int) *[][]int {
 }
 
 // @lc code=end
-
-func main() {
-	fmt.Println(findMinHeightTrees(4, [][]int{{0, 1}, {1, 2}, {1, 3}}))
-	// fmt.Println(findMinHeightTrees(6, [][]int{{0, 1}, {2, 0}, {0, 3}, {3, 4}, {4, 5}}))
-}
