@@ -90,8 +90,3 @@ func swap(nums *[]int, i, j int) {
 }
 
 // @lc code=end
-func main() {
-	nums := []int{1, 2, 2, 5, 2, 1, 5, 2, 1, 3, 4, 4, 1, 5, 2}
-	wiggleSort(nums)
-
-}
