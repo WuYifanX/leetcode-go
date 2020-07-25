@@ -1,15 +1,18 @@
-import (
-	"container/heap"
-    "fmt"
-)
-
-type IntHeap []int
 
 /*
  * @lc app=leetcode.cn id=313 lang=golang
  *
  * [313] 超级丑数
  */
+
+// @lc code=start
+
+import (
+	"container/heap"
+    "fmt"
+)
+
+type IntHeap []int
 
 func (h IntHeap) Len() int           { return len(h) }
 func (h IntHeap) Less(i, j int) bool { return h[i] < h[j] }
@@ -27,7 +30,6 @@ func (h *IntHeap) Pop() interface{} {
 	return x
 }
 
-// @lc code=start
 func nthSuperUglyNumber(n int, primes []int) int {
 	if len(primes) == 0 || n == 1 {
 		return 1
