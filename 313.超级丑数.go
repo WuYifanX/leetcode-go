@@ -1,4 +1,3 @@
-
 /*
  * @lc app=leetcode.cn id=313 lang=golang
  *
@@ -6,10 +5,10 @@
  */
 
 // @lc code=start
+package main
 
 import (
 	"container/heap"
-    "fmt"
 )
 
 type IntHeap []int
@@ -36,21 +35,22 @@ func nthSuperUglyNumber(n int, primes []int) int {
 	}
 
 	h := new(IntHeap)
-    heap.Push(h, 1)
-    n--
+	heap.Push(h, 1)
+	n--
 	for n > 0 {
-        // fmt.Println(h)
-		value:= heap.Pop(h).(int)
+		// fmt.Println(h)
+		value := heap.Pop(h).(int)
 		for (h.Len() > 0) && value == (*h)[0] {
 			heap.Pop(h)
 		}
 
-		for i:=0; i < len(primes); i++ {
-			heap.Push(h, value * primes[i])
+		for i := 0; i < len(primes); i++ {
+			heap.Push(h, value*primes[i])
 		}
-		n--;
+		n--
 	}
 
 	return heap.Pop(h).(int)
 }
+
 // @lc code=end
