@@ -12,7 +12,7 @@ import (
 type NestedInteger struct {
 }
 
-func (n NestedInteger) IsInteger() bool {}
+// func (n NestedInteger) IsInteger() bool {}
 
 func (n *NestedInteger) SetInteger(value int)   {}
 func (n *NestedInteger) Add(elem NestedInteger) {}

@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /*
  * @lc app=leetcode.cn id=375 lang=golang
  *
@@ -15,7 +13,7 @@ func getMoneyAmount(n int) int {
 
 // @lc code=end
 
-func main() {
-	result := getMoneyAmount(10)
-	fmt.Println(result)
-}
+// func main() {
+// 	result := getMoneyAmount(10)
+// 	fmt.Println(result)
+// }
