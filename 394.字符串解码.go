@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /*
  * @lc app=leetcode.cn id=394 lang=golang
  *
@@ -64,6 +62,6 @@ func repeatString(element string, times int) string {
 
 // @lc code=end
 
-func main() {
-	fmt.Println(decodeString("3[a10[bc]]"))
-}
+// func main() {
+// 	fmt.Println(decodeString("3[a10[bc]]"))
+// }
