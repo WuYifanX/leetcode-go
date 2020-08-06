@@ -1,8 +1,6 @@
-package main
-
-import (
-	"math/rand"
-)
+// import (
+// 	"math/rand"
+// )
 
 /*
  * @lc app=leetcode.cn id=384 lang=golang
