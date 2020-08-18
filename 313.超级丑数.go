@@ -5,7 +5,6 @@
  */
 
 // @lc code=start
-package main
 
 import (
 	"container/heap"
