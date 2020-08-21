@@ -91,13 +91,6 @@ func isMatch(s string, p string) bool {
 		dp[i] = make([]bool, len(p)+1)
 	}
 
-	// for i := 0; i < len(dp); i++ {
-	// 	if p[0] == '*' {
-	// 		dp[i][1] = true
-	// 	}
-	// }
-	// fmt.Println(dp)
-
 	for i := 0; i < len(dp); i++ {
 		for j := 0; j < len(dp[0]); j++ {
 
@@ -117,8 +110,6 @@ func isMatch(s string, p string) bool {
 			} else {
 				dp[i][j] = false
 			}
-			// fmt.Println(dp, i, j, string(p[j-1]), string(s[i-1]))
-
 		}
 	}
 	return dp[len(s)][len(p)]
