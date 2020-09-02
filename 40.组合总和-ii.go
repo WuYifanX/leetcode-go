@@ -1,5 +1,3 @@
-package main
-
 import "sort"
 
 /*
@@ -107,7 +105,7 @@ func backtrack(candidates *[]int, current *[]int, isUsed *[]bool, start int, res
 		(*isUsed)[index] = true
 		*current = append(*current, currentValue)
 
-		backtrack(candidates, current, isUsed, index, result, target-currentValue)
+		backtrack(candidates, current, isUsed, index+1, result, target-currentValue)
 
 		(*isUsed)[index] = false
 		*current = (*current)[:len(*current)-1]
