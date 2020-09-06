@@ -1,4 +1,3 @@
-package main
 
 import "fmt"
 
@@ -145,6 +144,6 @@ func buildTrie(word string, index int, trie *Trie) {
 
 // @lc code=end
 
-func main() {
-	fmt.Println(findWords([][]byte{{'a', 'b'}, {'c', 'd'}}, []string{"acdb"}))
-}
+// func main() {
+// 	fmt.Println(findWords([][]byte{{'a', 'b'}, {'c', 'd'}}, []string{"acdb"}))
+// }
