@@ -8,4 +8,5 @@
     "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
     "go.docsTool": "gogetdoc",
     "go.formatTool": "goimports",
+    "python.pythonPath": "/usr/bin/python3",
 }
