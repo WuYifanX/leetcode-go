@@ -1,12 +1,1 @@
-{
-    "go.autocompleteUnimportedPackages": true,
-    "go.gocodePackageLookupMode": "go",
-    "go.gotoSymbol.includeImports": true,
-    "go.useCodeSnippetsOnFunctionSuggest": true,
-    "go.inferGopath": true,
-    "go.gopath": "/Users/yfwu/go/",
-    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
-    "go.docsTool": "gogetdoc",
-    "go.formatTool": "goimports",
-    "python.pythonPath": "/usr/bin/python3",
-}
+{}
