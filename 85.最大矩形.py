@@ -48,21 +48,13 @@ class Solution:
                     poppedIndex = stack.pop()
 
                     height = heights[poppedIndex]
-                    width = index - poppedIndex
+                    if len(stack) == 0:
+                        width = index
+                    else:
+                        width = index - stack[-1] - 1
                     maxArea = max(maxArea, height * width)
-                    print(height, width, maxArea)
 
                 stack.append(index)
-            print(heights)
 
         return maxArea
 # @lc code=end
-
-
-# [["1","0","1","0","0"],
-#  ["1","0","1","1","1"],
-#  ["1","1","1","1","1"],
-#  ["1","0","0","1","0"]]
-
-3 1 3 2 2 0
-1 2
